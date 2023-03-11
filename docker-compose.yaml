@@ -17,7 +17,7 @@ services:
    environment:
      - HUB_HOST=hub
  test-module-one:
-    image: tests-image
+    image: lautarorial/selenium-docker
     depends_on: 
       - chrome
       - firefox
@@ -28,7 +28,7 @@ services:
     volumes:
       - ./output/module-one-test-results:/tests/test-output
  test-module-two:
-    image: tests-image
+    image: lautarorial/selenium-docker
     depends_on: 
       - chrome
       - firefox
